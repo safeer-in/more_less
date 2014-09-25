@@ -1,4 +1,4 @@
-JQUERY PLUGIN TO SHORTEN TEXT - MORE LESS PLUGIN
+Jquery Plugin To Shorten Text - MORE LESS Plugin
 ------------------------------------------------
 
 My small attempt to contribute a text shortening plugin to opensource users.

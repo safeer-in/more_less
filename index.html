@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>
-		More or Less Jquery Plugin
+		More Less Jquery Plugin
 	</title>
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.more-less.js"></script>
@@ -13,7 +13,27 @@
 	</script>
 </head>
 <body>
-<div>
+<div class="wrapper">
+<div class="header">
+<div class="content">
+<h3 class="header_text">More Less jQuery Plugin</h3>
+</div>
+</div>
+<div class="content">
+<div class="doc">
+<h4>Documentation</h4>
+<pre>
+&lt;script type="text/javascript" src="js/jquery-1.10.2.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/jquery.more-less.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+$(document).ready(function(){
+	$('.more_less_content').moreless();
+});
+&lt;/script&gt;
+</pre>
+</div>
+<div class="demo">
+<h4>Demo</h4>
 <p>
 	<span id="more_less_content" class="more_less_content">
 	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -33,5 +53,42 @@
 	</span>
 </p>
 </div>
+</div>
+</div>
 </body>
 </html>
+<style>
+body,p,div,h1,h2,h3,h4,ul,li{
+margin:0px;
+padding:0px;	
+}
+.wrapper{
+width:100%;
+margin:0;
+padding:0;
+}
+.content{
+width:80%;
+margin:auto;
+}
+.header{
+width: 100%;
+height: 60px;
+box-shadow: 2px 1px 4px 6px #eee;
+}
+.header_text{
+float: left;
+padding-top: 24px;
+}
+.demo,.demo span.more_less_content{
+width:100%;
+float:left;
+padding:12px 6px 12px 6px;
+}
+.doc{
+width:100%;
+float:left;
+padding:12px 6px 12px 6px;
+}
+
+</style>

@@ -22,7 +22,7 @@
         
         $(this).each(function(){ 
             var content		=	$(this).html(); 
-            var contentLength	=	content!=undefined ? content.length	:	0;
+            var contentLength	=	content!=undefined ? $.trim(content).length	:	0; alert(contentLength);
             var stripString	=	contentLength>wordlimit	?	true	:	false;
             
             if(stripString){

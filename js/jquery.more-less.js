@@ -1,3 +1,9 @@
+/*
+ * more-less jquery plugin
+ * @since:10-10-2014 
+ * @author: Mohammed Safeer A R
+ * http://safeeronline.wordpress.com
+ */
 (function($){
     $.fn.moreless	=	function(options){
 		

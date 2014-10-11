@@ -38,21 +38,14 @@
         $('.ml_more_less').on('click',function(e){
             e.preventDefault();
             var parent =   $(this).parent();
-            var contentFirst=parent.find('.ml_first_text').html();
-            var contentSecond=parent.find('.ml_remain_text').html(); 
-            var content=contentFirst+contentSecond;
             if($(this).hasClass('more')){
-                parent.find('.ml_content').html(content);
-                parent.find('.ml_content').data("fcontent",contentFirst);
-                parent.find('.ml_content').data("scontent",contentSecond);
+                parent.find('.ml_limit_text').hide();
+                parent.find('.ml_remain_text').show();
                 $(this).removeClass('more').addClass('less');
                 $(this).html(lessText);
             }else if($(this).hasClass('less')){
-                var a=parent.find('.ml_content').data("fcontent"); 
-                var b=parent.find('.ml_content').data("scontent");
-                var html1			=	'<span class="ml_first_text">'+a+'</span>'; 
-                var html2			=	'<span class="ml_remain_text" style="display:none">'+b+'</span>';
-                parent.find('.ml_content').html(html1+limit_text+html2);
+                parent.find('.ml_limit_text').show();
+                parent.find('.ml_remain_text').hide();
                 $(this).removeClass('less').addClass('more');
                 $(this).html(moreText);	
             }

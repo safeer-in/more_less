@@ -1,5 +1,5 @@
 /*
- * more-less jquery plugin
+ * more-less jquery plugin v 1.0
  * @since:10-10-2014 
  * @author: Mohammed Safeer A R
  * http://safeeronline.wordpress.com
